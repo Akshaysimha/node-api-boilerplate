@@ -7,6 +7,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var mongo = require('./config/mongo_config');
 
+// connect to mono db
 mongo.then(() => {
     console.log('connected');
 }, error => {
